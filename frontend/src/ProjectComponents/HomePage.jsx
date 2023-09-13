@@ -1,8 +1,15 @@
 import React from 'react'
+import SearchBar from './SearchBar'
+import Tabs from './Tabs'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <>
+    <SearchBar></SearchBar>
+
+    <Tabs></Tabs>
+    </>
+    
   )
 }
 

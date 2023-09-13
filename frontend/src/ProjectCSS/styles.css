@@ -1,45 +1,55 @@
-/* navbar.css */
-.nav-link{
-    transition: all 0.1s;
-    font-weight: bold;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.container{
+    padding: 10%;
+    text-align: center;
 }
-.nav-link:hover{
-    border-bottom: 2px solid black;
+#custom-search-input {
+    margin:0;
+    margin-top: 10px;
+    padding: 0;
+}
+ 
+#custom-search-input .search-query {
+    width:100%;
+    padding-right: 3px;
+    padding-left: 15px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 0;
+}
+ 
+#custom-search-input button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: absolute;
+    right:0;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color:#D9230F;
+    cursor: unset;
+    z-index: 2;
+}
+ 
+.search-query:focus{
+    z-index: 0;   
 }
 
-
-/* Style the navbar background */
-.navbar {
-    background-color: #a80000; /* Change the background color to your desired color */
-  }
-  
-  /* Style the navbar brand (logo) */
-  .navbar-brand {
-    color: rgb(138, 59, 59); /* Change the text color to your desired color */
-    font-size: 24px; /* Adjust the font size as needed */
-  }
-  
-  /* Style the navigation links */
-  .nav-link {
-    color: rgb(26, 9, 9); /* Change the text color to your desired color */
-    margin-right: 20px;
-    text-decoration: none; /* Remove underline from the link */
-    font-size: 16px; /* Adjust the font size as needed */
-  }
-  
-  /* Style the active link */
-  /* .nav-link.active {
-    font-weight: bold; 
-
-  } */
-  
-  
-  
-  /* Style the Sign in and Log-in links */
-  .navbar-nav li a {
-    color: rgb(0, 0, 0); /* Change the text color to your desired color */
-    margin-right: 20px;
-    text-decoration: none; /* Remove underline from the link */
-    font-size: 16px; /* Adjust the font size as needed */
-
-  }
+.container1{
+  direction: rtl;
+}
+.navtop{
+  margin-top:50px;
+}
+.tab-content {
+  padding: 40px;
+  margin-top: -20px; 
+}
