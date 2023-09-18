@@ -47,7 +47,6 @@ const PasswordRegex = () => {
             <p className="card-text">
               <strong>Pattern:</strong> {patternObj.pattern}
               <br />
-              Description of the pattern...
             </p>
             <button
               className="btn btn-primary"

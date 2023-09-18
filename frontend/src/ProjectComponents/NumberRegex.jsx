@@ -11,14 +11,6 @@ const NumberRegex = () => {
       name: 'Negative Integer',
       pattern: '^-[1-9]\\d*$',
     },
-    {
-      name: 'Positive Decimal',
-      pattern: '^[1-9]\\d*(\\.\\d+)?$',
-    },
-    {
-      name: 'Negative Decimal',
-      pattern: '^-[1-9]\\d*(\\.\\d+)?$',
-    },
   ];
 
   const [copied, setCopied] = useState(Array(regexPatterns.length).fill(false));
@@ -51,7 +43,6 @@ const NumberRegex = () => {
             <p className="card-text">
               <strong>Pattern:</strong> {patternObj.pattern}
               <br />
-              Description of the pattern...
             </p>
             <button
               className="btn btn-primary"

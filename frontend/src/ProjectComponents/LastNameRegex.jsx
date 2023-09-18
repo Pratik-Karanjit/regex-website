@@ -4,16 +4,12 @@ import React, { useState } from 'react';
 const LastNameRegex = () => {
   const regexPatterns = [
     {
-      name: 'Pattern 1',
-      pattern: `^[A-Z][a-z]*$`,
+      name: 'Basic Last Name Pattern',
+      pattern: `^[A-Za-z'-]+$`,
     },
     {
-      name: 'Pattern 2',
-      pattern: '^[A-Za-z\' -]*[A-Za-z]$',
-    },
-    {
-      name: 'Pattern 3',
-      pattern: '^[A-Za-zÀ-ÖØ-öø-ÿ]+([ \' -][A-Za-zÀ-ÖØ-öø-ÿ]+)*[A-Za-zÀ-ÖØ-öø-ÿ]$',
+      name: 'Strict Last Name Pattern',
+      pattern: '^[A-Za-z]+(?:-[A-Za-z]+)?$',
     },
   ];
 
@@ -47,7 +43,6 @@ const LastNameRegex = () => {
             <p className="card-text">
               <strong>Pattern:</strong> {patternObj.pattern}
               <br />
-              Description of the pattern...
             </p>
             <button
               className="btn btn-primary"

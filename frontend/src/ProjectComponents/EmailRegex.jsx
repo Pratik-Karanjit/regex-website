@@ -28,7 +28,6 @@ const EmailRegex = () => {
         <p className="card-text">
           <strong>Pattern:</strong> {regexPattern}
           <br />
-          This pattern matches a valid email address.
         </p>
         <button
           className="btn btn-primary"

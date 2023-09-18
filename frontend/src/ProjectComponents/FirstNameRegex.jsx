@@ -8,8 +8,8 @@ const FirstNameRegex = () => {
       pattern: '^[A-Z][a-z]',
     },
     {
-      name: 'Pattern 2',
-      pattern: '^[A-Za-z]',
+      name: 'Start with an uppercase letter and are followed by zero or more lowercase letters ',
+      pattern: '^[A-Z][a-z]*$',
     },
   ];
 
@@ -23,12 +23,10 @@ const FirstNameRegex = () => {
     document.execCommand('copy');
     document.body.removeChild(textArea);
 
-    // Update the "Copied" state for the clicked pattern
     const updatedCopied = [...copied];
     updatedCopied[index] = true;
     setCopied(updatedCopied);
 
-    // Reset the "Copied" state after a brief delay
     setTimeout(() => {
       const resetCopied = [...updatedCopied];
       resetCopied[index] = false;
