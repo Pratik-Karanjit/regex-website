@@ -11,6 +11,10 @@ const FirstNameRegex = () => {
       name: 'Start with an uppercase letter and are followed by zero or more lowercase letters ',
       pattern: '^[A-Z][a-z]*$',
     },
+    {
+      name: 'Initial Capitalized First Name',
+      pattern: '^[A-Z][a-z]*$',
+    }
   ];
 
   const [copied, setCopied] = useState(Array(regexPatterns.length).fill(false));
