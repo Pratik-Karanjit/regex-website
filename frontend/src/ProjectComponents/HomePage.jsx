@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Tabs from './Tabs';
 import Axios from 'axios';
 import logo from '../ProjectCSS/Regex website logo.png'
+import LoginForm from './LoginForm';
 
 const HomePage = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -93,6 +94,7 @@ const HomePage = () => {
         </div>
       </div>
       <Tabs />
+      <LoginForm></LoginForm>
     </div>
   );
 };

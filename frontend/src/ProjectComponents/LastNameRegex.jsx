@@ -11,6 +11,10 @@ const LastNameRegex = () => {
       name: 'Strict Last Name Pattern',
       pattern: '^[A-Za-z]+(?:-[A-Za-z]+)?$',
     },
+    {
+      name: 'Extended Last Name Pattern',
+      pattern: '^[A-Za-z\'-]+$',
+    }
   ];
 
   const [copied, setCopied] = useState(Array(regexPatterns.length).fill(false));
