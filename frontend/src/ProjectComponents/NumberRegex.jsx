@@ -11,6 +11,10 @@ const NumberRegex = () => {
       name: 'Negative Integer',
       pattern: '^-[1-9]\\d*$',
     },
+    {
+      name: 'Non-Negative Integer',
+      pattern: '^(0|[1-9]\\d*)$',
+    }
   ];
 
   const [copied, setCopied] = useState(Array(regexPatterns.length).fill(false));
